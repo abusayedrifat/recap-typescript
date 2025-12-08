@@ -14,3 +14,9 @@ console.log(names);
 const basket = ['banana', 24];
 let mySize = 3;
 console.log(mySize);
+function calculateTax(income) {
+    if (income < 10000) {
+        console.log('gorib');
+    }
+}
+calculateTax(5500);

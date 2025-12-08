@@ -34,3 +34,12 @@ const basket : [string, number] = ['banana', 24]
   console.log(mySize);
    
 
+//function
+
+function calculateTax(income:number): number{
+  if (income < 10000) {
+    return income*0.12;
+  }
+    
+  return income*0.35
+}
