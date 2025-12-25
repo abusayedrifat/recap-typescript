@@ -22,11 +22,8 @@ const user1 ={
         return `my new balance is ${this.balance+balance}`
     }
 }
-const user2 ={
-    userName : 'sayed',
-    balance : -20,
-    status:'hoto-doridro',
-    addBalance(balance:number):string{
-        return `my new balance is ${this.balance+balance}`
-    }
-}
+
+
+const arr:number[] = [2,3,4,5,6]
+
+const squaredArr:number[] = arr.map((num:number):number => num*num);
