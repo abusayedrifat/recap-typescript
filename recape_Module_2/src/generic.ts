@@ -14,9 +14,14 @@ const names : Generic<string> = ['abu', 'sayed', 'rifat']
 const booleans : Generic<boolean> = [true, false, true, true]
 
 
-//Object
+//Array of Object
 
-
+const users : Generic<{name:string, age:number}> = [
+    {name:'abu', age:3},
+    {name:'abasdu', age:4},
+    {name:'abufdgh', age: 5},
+    {name:'asdfghbu', age:9},
+]
 
 
 
