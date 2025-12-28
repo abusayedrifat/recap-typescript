@@ -24,7 +24,14 @@ const users : Generic<{name:string, age:number}> = [
 ]
 
 
+// tuple
 
+
+type GenericTuple<X,Y> = [X,Y]
+
+const couple:GenericTuple<string, string> = ['boy', 'girl']
+
+const stuff: GenericTuple<number,{name:string, age:number}> = [123,{name:'rifat', age:34}]
 
 
 
