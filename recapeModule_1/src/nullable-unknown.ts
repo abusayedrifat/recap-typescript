@@ -15,7 +15,7 @@
 
 
     //unknown type
-    //  ( we don't know about the value untill we run it. we will know about the value in "run Time")
+    //  ( we don't know about the value untill we run it. we will know about the value in "run Time". in that case we will use 'typeof')
 
     const KmToMeter = (value:unknown)=>{
         if ( typeof value === 'number') {
