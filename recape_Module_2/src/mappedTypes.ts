@@ -24,12 +24,16 @@
 
 //note: The keyof operator in TypeScript creates a union type of all the keys (property names) of an object type. 
 
-type AreaString = {
-    [key in keyof AreaNumber] : string
+type AreaString<T> = {
+    [key in keyof T] : T[key]
 }
  
 
+const areaMeasuer: AreaString<{height:string, widdth:number }> ={
 
+    height:'123',
+    widdth:1234
+}
 
 
 
