@@ -29,11 +29,32 @@ type AreaString<T> = {
 }
  
 
-const areaMeasuer: AreaString<{height:string, widdth:number }> ={
+const areaMeasuer2: AreaString<{height:string, width:number }> ={
 
     height:'123',
-    widdth:1234
+    width:1234
 }
+
+
+
+
+
+type Volume4 = {
+    height:string,
+    width:number,
+    length:number
+}
+
+
+type MapVolume4<T> = {
+    [key in keyof T ] : T[key]
+}
+
+const measureVolume : MapVolume4<{height:number, width:string, length:number}> = {
+    height:356,
+    width:'2345',
+    length:234
+} 
 
 
 
