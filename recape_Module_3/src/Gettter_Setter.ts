@@ -32,6 +32,38 @@ console.log(temp.celciusToFer);
 
 
 
+class BankAccount {
+    name:string;
+    id:number;
+    private _balance: number
+
+    constructor(name:string, id:number , _balance:number){
+        this.name = name;
+        this.id = id;
+        this._balance = _balance
+    }
+
+    //getter
+    get balance() {  
+        return this._balance
+    }
+
+
+    //setter
+
+    set deposit(amount:number){
+    
+        this._balance = this._balance+amount
+    }
+}
+
+const goriberAccount = new BankAccount('rifat', 123, 50)
+
+goriberAccount.deposit = 30
+
+console.log(goriberAccount.balance);
+
+
 
 
 
