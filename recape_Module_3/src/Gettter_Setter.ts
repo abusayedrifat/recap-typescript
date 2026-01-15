@@ -2,6 +2,9 @@
 // getter & setter
 //Getters and setters in TypeScript allow you to control access to class properties with custom logic. They look like properties when used but execute functions behind the scenes.
 
+// public - accessible from anywhere (default for methods/properties)
+// private - only accessible within the class itself
+// protected - accessible within the class and its subclasses
 
 class Temperature {
     tempInCelcius : number;
