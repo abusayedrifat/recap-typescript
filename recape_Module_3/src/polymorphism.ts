@@ -46,9 +46,45 @@ class Shape {
     }
 }
 
-class Circle extends 
+class Circle extends Shape {
+    radius:number
+
+    constructor(radius:number){
+        super()
+        this.radius = radius
+    }
+
+    getArea(): number {
+        return 2*Math.PI*Math.pow(this.radius,2);
+    }
+}
 
 
+class Ractangle extends Shape{
+    length:number;
+    width:number;
+
+    constructor(length:number,width:number){
+        super()
+        this.length = length;
+        this.width = width
+    }
+
+    getArea(): number {
+        return this.width*this.length;
+    }
+}
+
+
+const circle = new Circle(2);
+const ractangle = new Ractangle(4,5)
+
+const measureArea = (param: Shape) =>{
+   console.log(param.getArea());
+    
+}
+
+measureArea(ractangle)
 
 
 
